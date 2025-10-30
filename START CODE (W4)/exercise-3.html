@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        header, footer {
+            background: #1e90ff;
+            border-radius: 0.5rem;
+            padding: 10px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100px;
+        }
+      
+        .container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+            padding: 10px;
+        }
+
+        .sub-container{
+            display: flex;
+            flex-grow: 1;
+            width: 100%;
+            gap: 10px;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            background:  #3cb371;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 0.5rem;
+            flex: 1;
+        }
+
+        .item {
+            display: flex;
+            background: #2f8d59;
+            height: 150px;
+            width: 150px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0.5rem;
+            box-shadow: #226741 2px 2px 5px;
+        }
+
+        aside {
+            display: flex;
+            justify-content: center;
+            width: 200px;
+            padding: 10px;
+            background: #ff6347;
+            border-radius: 0.5rem;
+            box-shadow: #e02200 2px 2px 5px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <header>header</header>
+        <div class="sub-container">
+            <main>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+            </main>
+            <aside>sidebar</aside>
+        </div>
+        <footer>footer</footer>
+    </div>
+  </body>
+</html>
