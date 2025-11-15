@@ -1,0 +1,67 @@
+<!-- Write your code here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Page</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            padding-top: 10px;
+            background-color: #0A192F;
+        }
+        li, a {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            padding: 30px 10%;
+        }
+        .logo {
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .menu {
+            display: flex;
+            list-style-type: none;
+        }
+        .menu li {
+            display: inline-block;
+            padding: 0px 20px;
+        }
+        .menu li a {
+            transition: all 0.3s ease 0s;
+        }
+        .menu li a:hover {
+            color: #01EEFF;
+        }
+        .menu li a.active {
+            color: #01EEFF;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">My Website</a>
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

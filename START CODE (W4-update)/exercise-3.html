@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            gap: 8px;
+            padding: 10px;
+        }
+        header, footer {
+            color: white;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            padding: 20px;
+            background-color: #1e90ff;
+            box-shadow: 0 0 5px #0077ea;
+            border-radius: 0.5rem;
+        }
+        footer {
+            background-color: #4169e1;
+            box-shadow: 0 0 5px #1d44b8;
+        }
+        .content  {
+            display: flex;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            width: 100%;
+            gap: 10px;
+            flex-grow: 1;
+        }
+        main {
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap;
+            background-color: #3cb371;
+            box-shadow: 0 0 5px #2f8d59;
+            border-radius: 0.5rem;
+            padding: 1em;
+            justify-content: flex-start;
+            align-items: flex-start;
+            align-content: flex-start;
+            gap: 1em;
+        }
+        .Item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 100px;
+            gap: 2em;
+            background-color: #2f8d59;
+            box-shadow: 0 0 5px #226741;
+        }
+        .right-section{
+            display: flex;
+            background-color: #ff6347;
+            width: 150px;
+            border-radius: 0.5rem;
+            justify-content: center;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Header</header>
+        <div class="content">
+            <main>
+                <div class="Item">Item</div>
+                <div class="Item">Item</div>
+                <div class="Item">Item</div>
+                <div class="Item">Item</div>
+                <div class="Item">Item</div>
+                <div class="Item">Item</div>
+                <div class="Item">Item</div>
+                <div class="Item">Item</div>
+                <div class="Item">Item</div>
+                <div class="Item">Item</div>
+                <div class="Item">Item</div>
+                <div class="Item">Item</div>
+                <div class="Item">Item</div>
+                <div class="Item">Item</div>
+                <div class="Item">Item</div>
+                <div class="Item">Item</div>
+                <div class="Item">Item</div>
+                <div class="Item">Item</div>
+                <div class="Item">Item</div>
+                <div class="Item">Item</div>
+            </main>
+            <section class="right-section">Sidebar</section>
+        </div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
