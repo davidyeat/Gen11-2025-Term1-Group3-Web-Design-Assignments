@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 20px;
+        }
+        form {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-family: sans-serif;
+        }
+        input[type="checkbox"] {
+            display: none;
+        }
+        #myCheckbox {
+            position: absolute;
+            opacity: 0;
+            width: 0; height: 0;
+        }
+        .custom-checkbox::before {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            border: 2px solid #555;
+            border-radius: 4px;
+            vertical-align: middle;
+            transition: all 0.2s ease-in-out;
+        }
+        .custom-checkbox::after {
+            content: '';
+            position: absolute;
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+        }
+        .custom-checkbox {
+            position: relative;
+            padding-left: 28px;
+            line-height: 20px;
+            user-select: none;
+        }
+        #myCheckbox:checked + .custom-checkbox::before {
+            background-color: #27ae60;
+            border-color: #27ae60;
+        }
+        #myCheckbox::checked + .custom-checkbox::after {
+            content: '';
+            opacity: 1;
+            left: 4px;
+            top: 2px;
+            width: 6px;
+            height: 12px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+        }
+        #myCheckbox:indeterminate + .custom-checkbox::before {
+            background-color: #f39c12; 
+            border-color: #f39c12;
+        }
+        #myCheckbox:indeterminate + .custom-checkbox::before {
+            content: '';
+            opacity: 1;
+            top: 10px; /* Center vertically */
+            left: 4px;
+            width: 16px; /* Width of the dash */
+            height: 2px; /* Thickness of the dash */
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <input type="checkbox" id="myCheckbox">
+        <label for="myCheckbox" class="custom-checkbox">Three-state checkbox</label>
+    </form>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const checkbox = document.getElementById('myCheckbox');
+            checkbox.indeterminate = true;
+
+            checkbox.addEventListener('click', function(envent){
+                if(this.checked && !this.indeterminate){}
+                else if(this.indeterminate){
+                    envent.preventDefault();
+                    this.indeterminate = false;
+                    this.checked = false;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
