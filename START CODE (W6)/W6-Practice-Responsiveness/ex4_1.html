@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4: Media and Clamp function</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+        }
+        .small, .big {
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: none;
+        }
+        @media only screen and (max-width: 599px) {
+            .small {
+                display: inline;
+                background-color: orangered;
+            }
+        }
+        @media only screen and (min-width: 600px) {
+            .big {
+                display: inline;
+                background-color: green;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <span class="small">I'm SMALL 😢</span>
+            <span class="big">I'm BIG 😱</span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3: Responsiveness with flex layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            font-size: 1.2rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header, footer {
+            padding: 15px;
+            background: rgb(19, 18, 18);
+            color: white;
+            width: 100%;
+            text-align: center;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 10px;
+            padding: 10px;
+        }
+        .content {
+            background: lightgray;
+            padding: 10px;
+        }
+        .sidebar {
+            background: lightslategray;
+            padding: 10px;
+        }
+        /* Medium Screens (600px to 900px) */
+        @media (min-width: 600px) and (max-width: 900px){
+            .container {
+                font-size: 0.8rem;
+            }
+            header, footer {
+                padding: 10px;
+            }
+            .main {
+                flex-direction: row;
+            }
+            .content, .sidebar {
+                flex: 1;
+            }
+            .content {
+                margin-right: 10px;
+            }
+
+            /* Large Screens (900px to wider) */
+            @media(min-width: 900px){
+                .container {
+                    font-size: 0.6rem;
+                }
+                header, footer {
+                    padding: 30px;
+                }
+                .main {
+                    flex-direction: row;
+                }
+                .content {
+                    flex: 2;
+                    margin-right: 10px;
+                }
+                .sidebar {
+                    flex: 1;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Responsive Header</header>
+        <div class="main">
+            <div class="content">Main Content</div>
+            <div class="sidebar">Sidebar</div>
+        </div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4: Media and Clamp function</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .content {
+            background-color: greenyellow;
+            margin: 0 auto;
+            height: 80vh;
+            width: clamp(300px, 100%, 800px);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content"></div>
+    </div>
+</body>
+</html>
