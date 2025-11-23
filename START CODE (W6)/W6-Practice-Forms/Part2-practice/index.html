@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Create Account</h1>
+        </header>
+            <form class="account-form">
+                <!-- Name section -->
+                <div class="form-group row">
+                    <div class="column">
+                        <label for="fname">First name</label>
+                        <input type="text" id="fname" name="fname" placeholder="enter your first name" required>
+                    </div>
+                    <div class="column">
+                        <label for="lname">Last name</label>
+                        <input type="text" id="lname" name="lname" placeholder="enter your last name" required>
+                    </div>
+                </div>
+                
+                <!-- Email section -->
+                <div class="form-group row">
+                    <div class="column">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="enter your email" required>
+                    </div>
+                </div>
+
+                <!-- Password section -->
+                <div class="form-group row">
+                    <div class="column">
+                        <label for="psw">Password</label>
+                        <input type="password" id="psw" name="psw" placeholder="enter your password" required>
+                    </div>
+                    <div class="column">
+                        <label for="confirm-psw">Confirm Password</label>
+                        <input type="password" id="confirm-psw" name="confirm-psw" placeholder="enter your password again" required>
+                    </div>
+                </div>
+                
+                <!-- Gender and Hobbies section -->
+                <div class="form-group row">
+                    <div class="column">
+                        <label>Gender</label>
+                        <div class="radio-group">
+                            <input type="radio" id="male" name="gender" value="Male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="column">
+                            <label>Hobbies</label>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="music" name="hobbies" value="Music">
+                                <label for="music">Music</label>
+                                <input type="checkbox" id="sport" name="hobbies" value="Sports">
+                                <label for="sport">Sports</label>
+                                <input type="checkbox" id="travel" name="hobbies" value="Travel">
+                                <label for="travel">Travel</label>
+                                <input type="checkbox" id="movies" name="hobbies" value="Movies">
+                                <label for="movies">Movies</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Source of income section -->
+                <div class="form-group row">
+                    <div class="column">
+                        <label for="income-source"></label>
+                        <select name="income-source" id="income-source">
+                            <option value="employed">Employed</option>
+                            <option value="self-employed">Self-Employed</option>
+                            <option value="student">Student</option>
+                            <option value="retired">Retired</option>
+                            <option value="business-owner">Business owner</option>
+                        </select>
+                    </div>
+                    <div class="column">
+                        <label for="income-range">Income</label>
+                        <input type="range" id="income-range" name="income-range" min="0" max="1000000">
+                    </div>
+                </div>
+
+                <!-- Upload Profile Picture and Age section  -->
+                <div class="form-group row">
+                    <div class="column">
+                        <label>Upload Profile Picture</label>
+                        <div class="file-upload">
+                            <input type="file" id="profile-picture" name="profile_picture" hidden>
+                            <label for="profile-picture" class="custom-file-button">Choose File</label>
+                            <span class="file-name-text">No file chosen</span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label for="age">Age</label>
+                        <input type="number" name="age" id="age" min="0" max="150" placeholder="18" value="18">
+                    </div>
+                </div>
+
+                <!-- Bio section -->
+                 <div class="form-group row">
+                    <div class="column-full">
+                        <label for="bio">Bio</label>
+                        <textarea name="bio" id="bio" rows="4"></textarea>
+                    </div>
+                 </div>
+            </form>
+            <div class="footer">
+                <button type="submit" class="create-btn">Create</button>
+            </div>
+    </div>
+</body>
+</html>
