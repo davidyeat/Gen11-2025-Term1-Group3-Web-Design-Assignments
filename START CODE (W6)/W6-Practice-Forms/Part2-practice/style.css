@@ -3,3 +3,146 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background: #d9e8ec;
+}
+.container {
+    border: 15px solid rgb(4, 117, 135);
+    width: 610px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    background: white;
+    
+}
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(96, 96, 96);
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: 550;
+    background: #e9e9e9;
+    width: 100%;
+}
+.account-form {
+    width: 100%;
+    padding: 8px 30px;
+}
+.form-group.row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.column-full {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #087e7c;
+}
+
+/* ---- Inputs ---- */
+input, select, textarea {
+    padding: 5px;
+    border: 1px solid #d0d7de;
+    border-radius: 3px;
+    font-size: 14px;
+    outline: none;
+}
+input:focus, textarea:focus, select:focus {
+    border-color: #34aadc;
+}
+
+/* ---- Radio & Checkbox ---- */
+.radio-group label,.checkbox-group label {
+    margin-right: 2px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+}
+
+/* ---- Textarea ---- */
+textarea {
+    resize:none;
+}
+
+/* ---- File Input Styling ---- */
+.file-upload {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.custom-file-button {
+    background-color: #efefef;
+    padding: 5px 8px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    font-weight: normal;
+    color: #333;
+}
+.file-name-text {
+    font-size: 14px;
+    color: #333;
+}
+
+/* ---- Range Input ---- */
+input[type="range"] {
+    width: 100%;
+}
+.income-slider {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+}
+.income-value {
+    padding: 3px;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    border-radius: 5px;
+    background: #087e7c;
+}
+.age-num {
+    color: rgb(96, 96, 96);
+}
+/* ---- Footer Button ---- */
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px 30px;
+    text-align: right;
+    background: #e9e9e9;
+}
+.create-btn {
+    background: #1abc9c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: box-shadow 0.3 ease;
+}
+.create-btn:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
